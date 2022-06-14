@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/font-awesome.css">
         <link rel="stylesheet" href="css/sky-forms.css">
         <link rel="stylesheet" href="css/sky-forms-red.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
 
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery-ui.min.js"></script>
