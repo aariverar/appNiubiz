@@ -194,7 +194,6 @@ let autorize = () => {
     let tokenSeguridad = $("#tokenseguridad").val();
     let merchantid = $("#merchantid").val();
 
-    console.log(tokenSeguridad)
     data = {
         channel: $("#channel").val(),
         captureType: 'manual',
@@ -222,13 +221,13 @@ let autorize = () => {
         .then(response => response.json())
         .then(response => {
             console.log(response);
-            console(response);
+            consolex(response);
         })
         .catch(err => console.error(err));
 }
 
 
-let console = (param) => {
+let consolex = (param) => {
     const url = 'action.php';
     $.ajax({
         type: 'POST',
