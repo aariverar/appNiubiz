@@ -41,6 +41,10 @@ if(isset($_POST["responseTokenTransaction"])){
     $_SESSION["transactionToken"] = $_POST['transactionToken'];
 
 }
+if(isset($_POST["consolelog"])){
+    $_SESSION["jsondata"] = $_POST['response'];
+    echo true;
+}
 if(isset($_POST["cancel"])){
     session_destroy();
     echo true;

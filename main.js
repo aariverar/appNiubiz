@@ -191,7 +191,7 @@ let openFormPay = () => {
 
 
 let autorize = () => {
-    let tokenSeguridad = $("#tokenSeguridad").val();
+    let tokenSeguridad = $("#tokenseguridad").val();
     let merchantid = $("#merchantid").val();
 
     console.log(tokenSeguridad)
@@ -220,9 +220,31 @@ let autorize = () => {
 
     fetch(url, options)
         .then(response => response.json())
-        .then(response => console.log(response))
+        .then(response => {
+            console.log(response);
+            console(response);
+        })
         .catch(err => console.error(err));
 }
+
+
+let console = (param) => {
+    const url = 'action.php';
+    $.ajax({
+        type: 'POST',
+        url: url,
+        data: {
+            consolelog: 1,
+            response : param
+        },
+        success: function (response) {
+            if (response == true) {
+                location.href = "step5.php"
+            }
+        }
+    });
+}
+
 
 let cancel = () => {
     const url = 'action.php';
