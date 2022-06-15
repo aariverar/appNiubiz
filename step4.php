@@ -52,15 +52,9 @@
                 <div class="row">
                     <label class="label col col-2">Channel</label>
                     <section class="col col-4">
-                        <label class="select">
+                        <label class="input">
                             <i class="icon-append fa fa-user"></i>
-                            <select id="channel" name="channel">
-                                <option value="web" selected>Web</option>
-                                <option value="pasarela">Pasarela</option>
-                                <option value="mobile">Mobile</option>
-                                <option value="callcenter">Call Center</option>
-                                <option value="recurrent">Recurrent</option>
-                            </select>
+                            <input id="channel" type="text" readonly name="channel" value="<?php echo $_SESSION['channel'] ?>" placeholder="Channel">
                         </label>
                     </section>
                     <label class="label col col-2">Countable</label>

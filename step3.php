@@ -29,7 +29,7 @@
     <div class="body">
         <div class="sky-form">
             <header>
-                <h5>Configurar boton de pago - Regular</h5>
+                <h5>Build Regular</h5>
             </header>
             <fieldset>
                 <div class="row">
